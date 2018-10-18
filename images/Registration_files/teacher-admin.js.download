@@ -1,0 +1,36 @@
+$(document).ready(function(){
+
+/*----------batch----------*/
+
+/*-------------------------*/
+
+/*-------modifyBatch-------*/
+
+$('.batch_modify_popup').hide();
+$('.modify_link').on('click', () => {
+	$('.batch_modify_popup').show();
+});
+$('.back_btn').on('click', () => {
+	$('.batch_modify_popup').hide();
+});
+$('.save_link').on('click', (ev) => {
+	$('input[type="text"]').attr('disabled','true');
+	ev.preventDefault();
+});
+
+/*-------------------------*/
+
+/*--------viewBatch--------*/
+
+$('.view_batch_popup').hide();
+$('.view_full_batch').on('click', (ev) => {
+	ev.preventDefault();
+	$('.view_batch_popup').show();
+	
+});
+$('.back_btn_batch').on('click', () => {
+	$('.view_batch_popup').hide();
+});
+
+/*-------------------------*/
+});

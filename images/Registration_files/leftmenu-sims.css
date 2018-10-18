@@ -1,0 +1,55 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.leftMenu {		
+  box-shadow: 0 0 10px #9898ff;
+  margin-left: 2vw;	
+  margin-top: 5vh;
+  width: 17%;
+  overflow-y: scroll;
+  scroll: [auto|smooth];
+}
+#menuHeading{
+	background-color: #ababff;
+	padding: 10px;
+}
+.mainmenu, .submenu {
+  box-shadow: 0 0 10px #9898ff;
+  text-align: center;		
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu a {
+  
+  box-shadow: 0 0 10px #9898ff;	
+  display: block;
+  background-color: #FFF;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+.mainmenu a:hover {
+    background-color: #C5C5C5;
+}
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 35%;
+}
+
+.submenu a {
+  background-color: #EEE;
+}
+
+.submenu a:hover {
+  background-color: #C5C5C5;
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}	
