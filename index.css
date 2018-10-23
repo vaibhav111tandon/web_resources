@@ -13,6 +13,7 @@ body{
 	width: 100%;
 	height: 300px;
 	background-color: #26AFEB;
+	box-shadow: 0 0 7px #26AFEB;
 }
 #foot_title{
 	font-size: 25px !important;
@@ -111,7 +112,7 @@ body{
 @keyframes trans{
 	100%{color: orange;}
 }
-@media (min-width: 280px) and (max-width: 600px){
+@media (min-width: 250px) and (max-width: 600px){
 	.header{
 		height: 350px;
 	}
@@ -137,5 +138,8 @@ body{
 	}
 	#dev_heading{
 		font-size: 20px;
+	}
+	.dev_inner_content{
+		font-size: 15px;
 	}
 }	
